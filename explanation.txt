@@ -1,0 +1,9 @@
+These files are simulation codes for close-range millimeter wave SAR imaging. 
+The repository contains four files, fftw3.h, kernel.cu, pms_cuda.h, and pms_spline_cuda.h. 
+The FFT operations in the code use the FFTW library, so the FFTW environment needs to be configured. 
+The kernel.cu is the main framework of the entire SAR simulation program. 
+For ease of operation, the code uses simulated radar echo data. The PMS is short for pointer manage struct. 
+The PMS structure is designed for matrices and records the matrix pointer, length, number of dimensions and the length of each dimension. 
+The pms_spline_cuda.h is a code written for the speedup of cubic spline interpolation based on the pms_cuda.h. 
+The pms_spline_cuda.h is the method proposed in this paper, which allows parallel computation of cubic spline interpolation for multiple inputs. 
+These codes are for academic research purposes only and cannot be used for commercial purposes without permission.
